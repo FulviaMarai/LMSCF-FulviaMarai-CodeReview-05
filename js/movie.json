@@ -1,0 +1,85 @@
+let moviedata = JSON.parse(`{
+
+
+"movies" : [{
+			
+			"id" : "0",
+			"title" : "Blink", 
+			"poster" : "img/Blink.jpg",
+			"genre": "sci-fi,television", 
+			"info": "Don't blink. If you blink, you are dead",
+			"likes":"0"
+		},{
+
+			"id" : "1",
+			"title" : "The Court Jester", 
+			"poster" : "img/CourtJester.jpg", 
+			"genre": "comedy, musical", 
+			"info": "A jester unemployed is nobody's fool!",
+			"likes":"0"
+		},{
+
+			"id" : "2",
+			"title" : "Dead Poets Society", 
+			"poster" : "img/DeadPoetsSociety.jpg", 
+			"genre": "dramatic", 
+			"info": "Oh captain, my captain.",
+			"likes" : "0"
+		},{
+
+			"id" : "3",
+			"title" : "Ghostbuster", 
+			"poster" : "img/Ghostbusters.jpg", 
+			"genre": "comedy,fantasy",
+			"info": "Who you gonna call?",
+			"likes" :"0"
+		},{
+			
+			"id" : "4",
+			"title" : "The Goonies",
+			"poster" : "img/Goonies.png", 
+			"genre": "comedy,adventure", 
+			"info": "Goonies never say Die",
+			"likes" : "0"
+		},{
+			
+			"id" : "5",
+			"title" : "Big Trouble in Little China", 
+			"poster" : "img/GrossoGuaioChinatown.jpg", 
+			"genre": "adventure,fantasy", 
+			"info": "I'm a reasonable guy. But, I've just experienced some very unreasonable things.",
+			"likes": "0"
+		},{
+			"id" : "6",
+			"title" : "Inside Out", 
+			"poster" : "img/InsideOut.jpg", 
+			"genre": "comedy,animation", 
+			"info": "Congratulations San Francisco, you've ruined pizza!",
+			"likes" : "0"
+		},{
+			
+			"id" : "7",
+			"title" : "Labyrinth", 
+			"poster" : "img/Labyrinth.jpg", 
+			"genre": "adventure,fantasy",
+			"info": "You remind me of the babe...",
+			"likes": "0"
+		},{
+			"id" : "8",
+			"title" : "The Princess Bride", 
+			"poster" : "img/PrincessBride.jpg",
+			"genre": "comedy, fantasy", 
+			"info": "Hola! My name is Inigo Montoya. You have killed my father: prepare to die",
+			"likes" : "0"
+			
+		},{
+			
+			"id" : "9",
+			"title" : "The Nightmare Before Christmas", 
+			"poster" : "img/NightmareBeforeChristmas.jpg", 
+			"genre": "comedy,animation", 
+			"info": "Kidnap the Sandy Claws, beat him with a stick!",
+			"likes" : "0"
+
+		}]
+}`)
