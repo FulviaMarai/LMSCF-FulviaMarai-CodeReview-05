@@ -13,24 +13,20 @@
                             <p class="card-text text-truncate font-weight-light font-italic"><small>${moviedata.movies[i].info}</small></p>
                 
                              <div class="text-right">
-                            <button id="clickme" class="btn btn-lg" style="color:limegreen"><small>Like</small>
-                               <i class="fas fa-thumbs-up" style="color:limegreen"></i></span>&nbsp;
-                                <span id="${moviedata.movies[i].id}" class="badge badge-success rounded-circle">${moviedata.movies[i].likes}</span></button>
-                                </div>
+                                <button id="likeBtn" class="btn btn-lg" style="color:limegreen"><small>Like</small>
+                                <i class="fas fa-thumbs-up" style="color:limegreen"></i>&nbsp;
+                                <span id="displayLike}" class="badge badge-success rounded-circle">${moviedata.movies[i].likes}</span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-          
-            </div>
             `)
 
-            var button = document.getElementById("clickme"),
-                count = 0;
-                button.onclick = function() {
-                count += 1;
-              document.getElementById("${moviedata.movies[i].id}").innerHTML = count;
-};
+         $('#likeBtn').on("click",(function() {
+            moviedata.movies[i].likes++;}
+
+        ));
+
 
         };

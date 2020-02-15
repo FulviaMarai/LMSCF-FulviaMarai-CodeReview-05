@@ -69,7 +69,7 @@ let moviedata = JSON.parse(`{
 			"title" : "The Princess Bride", 
 			"poster" : "img/PrincessBride.jpg",
 			"genre": "comedy, fantasy", 
-			"info": "Hola! My name is Inigo Montoya. You have killed my father: prepare to die",
+			"info": "My name is Inigo Montoya. You have killed my father: prepare to die",
 			"likes" : "0"
 			
 		},{
