@@ -1,51 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> 
+	<meta charset="utf-8">
 	<meta name="viewport" content ="width=device-width, initial-scale=1.0">	
 
-    </script>
+	<title>Code Review 05</title>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">	<!-- for the icon thumb up -->
+
+	<script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
 </head>
 <body>
-	<header id="header" class="container-fluid p-2 text-white text-center" style="background: black">
+
+			<!-- Here starts the header -->
+
+	<header id="header" class="container-fluid p-2 text-white text-center" style="background:black">
 		<h1>Movie Factory</h1>
 	</header>
+
+			<!-- Here starts the navigation bar-->
+
 	<nav class="container-fluid navbar bg-dark text-light" style="height:40px" >
 		<ul class="list-unstyled">
 			<li><a class="text-decoration-none text-white" href="">Home</a></li>
 		</ul>
 	</nav>
-	<div class="container-fluid text-center text-light" style="background:rgb(29,35,41)">
-		<p>Movies</p>
-		<div class="row">
-  			<a class="col-lg-1 ml-auto m-1 dropdown-toggle text-light " href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: rgb(29,35,41)"> Sort </a>
-  
-  			<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-    			<a class="dropdown-item" href="#">Action</a>
-   				<a class="dropdown-item" href="#">Another action</a>
-    			<a class="dropdown-item" href="#">Something else here</a>
-  			</div>
+
+			<!-- Here starts the "title" of the page  -->
+
+ <main class="container-fluid" style="background:rgb(29,35,41)">        
+        <div class="text-white p-4 text-center">
+            <div class="row">
+                <div class="col-6 offset-3">
+                    <h2 class="text-white m-0">Movies</h2>
+                </div>
+
+				<!-- Here starts the code for the drop-down-menu button -->
+
+                <div class="col-lg-3 text-center">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle text-white" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background: rgb(29,35,41)"> Sort
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" id="mostLiked">Most Liked</a>
+                            <a class="dropdown-item" id="alphabetical">Alphabetical</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 		</div>
 
-	</div>
-	<div class="container-fluid">
-  	<div id="moviecards" class="row text-center" style="background:rgb(29,35,41)">
+			<!-- Here starts the main content of the page, displayed by a javascript function and a json list -->
 
+		<div class="container-fluid">
+  			<div id="movieCards" class="row text-center" style="background:rgb(29,35,41)">
+  			</div>
+		</div>
+	</main>
 
-  	</div>
-	</div>
+			<!-- Here starts the footer -->
 
-	
-<footer class="container-fluid p-2 text-white text-center" style="background: black" >
-	<p>Movie Factory </p>
-</footer>
+	<footer class="container-fluid p-2 text-white text-center" style="background: black">
+		<p>Movie Factory </p>
+	</footer>
+
+		<!-- Here are the links for the scripts -->
+
 
 <script type="text/javascript"  src="js/movie.json"></script>
 <script src="js/myscript.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/bootstrap.bundle.js"></script>	<!-- for the dropdown menu -->
+
+		<!-- Here is the first function to initially display the json list -->
+
+ <script>
+    
+        $( document ).ready(function() {
+            displayMovies();
+        });
+
+   </script>
+    
+  </script>
 
 </body>
 

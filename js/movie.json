@@ -1,5 +1,4 @@
-let moviedata = JSON.parse(`{
-
+var movieData = JSON.parse(`{
 
 "movies" : [{
 			
@@ -7,79 +6,84 @@ let moviedata = JSON.parse(`{
 			"title" : "Blink", 
 			"poster" : "img/Blink.jpg",
 			"genre": "sci-fi,television", 
-			"info": "Don't blink. If you blink, you are dead",
-			"likes":"0"
-		},{
+			"info": "They are fast. Faster than you can believe. Don’t turn your back, don’t look away, and don’t blink! Good luck.",
+			"likes":"18"
 
+		},{
+			
 			"id" : "1",
-			"title" : "The Court Jester", 
-			"poster" : "img/CourtJester.jpg", 
-			"genre": "comedy, musical", 
-			"info": "A jester unemployed is nobody's fool!",
-			"likes":"0"
-		},{
-
-			"id" : "2",
-			"title" : "Dead Poets Society", 
-			"poster" : "img/DeadPoetsSociety.jpg", 
-			"genre": "dramatic", 
-			"info": "Oh captain, my captain.",
-			"likes" : "0"
-		},{
-
-			"id" : "3",
-			"title" : "Ghostbuster", 
-			"poster" : "img/Ghostbusters.jpg", 
-			"genre": "comedy,fantasy",
-			"info": "Who you gonna call?",
-			"likes" :"0"
-		},{
-			
-			"id" : "4",
-			"title" : "The Goonies",
-			"poster" : "img/Goonies.png", 
-			"genre": "comedy,adventure", 
-			"info": "Goonies never say Die",
-			"likes" : "0"
-		},{
-			
-			"id" : "5",
 			"title" : "Big Trouble in Little China", 
 			"poster" : "img/GrossoGuaioChinatown.jpg", 
 			"genre": "adventure,fantasy", 
 			"info": "I'm a reasonable guy. But, I've just experienced some very unreasonable things.",
-			"likes": "0"
+			"likes": "13"
+				
+		},{
+
+			"id" : "2",
+			"title" : "The Court Jester", 
+			"poster" : "img/CourtJester.jpg", 
+			"genre": "comedy, musical", 
+			"info": "A jester unemployed is nobody's fool!",
+			"likes":"16"
+		},{
+
+			"id" : "3",
+			"title" : "Dead Poets Society", 
+			"poster" : "img/DeadPoetsSociety.jpg", 
+			"genre": "dramatic", 
+			"info": "Oh captain, my captain.",
+			"likes" : "14"
+		},{
+
+			"id" : "4",
+			"title" : "Ghostbuster", 
+			"poster" : "img/Ghostbusters.jpg", 
+			"genre": "comedy,fantasy",
+			"info": "Who you gonna call?",
+			"likes" :"12"
+		},{
+			
+			"id" : "5",
+			"title" : "The Goonies",
+			"poster" : "img/Goonies.png", 
+			"genre": "adventure, young adult", 
+			"info": "Goonies never say Die",
+			"likes" : "11"
+		
 		},{
 			"id" : "6",
 			"title" : "Inside Out", 
 			"poster" : "img/InsideOut.jpg", 
 			"genre": "comedy,animation", 
 			"info": "Congratulations San Francisco, you've ruined pizza!",
-			"likes" : "0"
+			"likes" : "11"
+			
 		},{
 			
 			"id" : "7",
 			"title" : "Labyrinth", 
 			"poster" : "img/Labyrinth.jpg", 
-			"genre": "adventure,fantasy",
+			"genre": "fantasy",
 			"info": "You remind me of the babe...",
-			"likes": "0"
+			"likes": "18"
+			
 		},{
+			
 			"id" : "8",
+			"title" : "The Nightmare Before Christmas", 
+			"poster" : "img/NightmareBeforeChristmas.jpg", 
+			"genre": "musical,animation", 
+			"info": "This is Halloween! / This is Halloween! / Halloween! Halloween!",
+			"likes" : "14"
+
+		},{
+			"id" : "9",
 			"title" : "The Princess Bride", 
 			"poster" : "img/PrincessBride.jpg",
 			"genre": "comedy, fantasy", 
 			"info": "My name is Inigo Montoya. You have killed my father: prepare to die",
-			"likes" : "0"
-			
-		},{
-			
-			"id" : "9",
-			"title" : "The Nightmare Before Christmas", 
-			"poster" : "img/NightmareBeforeChristmas.jpg", 
-			"genre": "comedy,animation", 
-			"info": "Kidnap the Sandy Claws, beat him with a stick!",
-			"likes" : "0"
+			"likes" : "15"
 
 		}]
 }`)
